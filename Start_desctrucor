@@ -1,0 +1,292 @@
+Filename:SART DST
+"PAR CHARL050Ù
+V ALPHA 1.2"Ø
+Ù
+For 1ãA To 500Ù
+NextÙ
+ClrTextÙ
+3ãIÙ
+3ãJÙ
+3ãIÙ
+3ãJÙ
+Ù
+"  START DESTRUCTOR "Ù
+"---------------------"Ù
+Locate 4,4,"JOUER"Ù
+Locate 4,5,"QUITTER"Ù
+While 1Ù
+If Getkey=28Ù
+Then 1ãKÙ
+Locate 4,4,"          "Ù
+Locate 2,4,"ConvJOUER"Ù
+Locate 2,5,"          "Ù
+Locate 4,5,"QUITTER"Ù
+IfEndÙ
+If Getkey=37Ù
+Then 2ãKÙ
+Locate 4,5,"           "Ù
+Locate 2,5,"ConvQUITTER"Ù
+Locate 2,4,"          "Ù
+Locate 4,4,"JOUER"Ù
+IfEndÙ
+If Getkey=31Ù
+Then If K=1Ù
+Then Goto NÙ
+IfEndÙ
+If K=2Ù
+Then Goto BÙ
+IfEndÙ
+IfEndÙ
+WhileEndÙ
+Lbl NÙ
+ClrTextÙ
+"      NIVEAUX      "Ù
+"---------------------"Ù
+"  @E74E@E769@E776@E765@E761@E775(1 @E761 10) : "?ãZÙ
+If Z=1Ù
+Then 50ãPÙ
+5ãVÙ
+10ãUÙ
+IfEndÙ
+If Z=2Ù
+Then 45ãPÙ
+5.5ãVÙ
+9ãUÙ
+IfEndÙ
+If Z=3Ù
+Then 40ãPÙ
+6ãVÙ
+8ãUÙ
+IfEndÙ
+If Z=4Ù
+Then 35ãPÙ
+6.5ãVÙ
+7ãUÙ
+IfEndÙ
+If Z=5Ù
+Then 30ãPÙ
+7ãVÙ
+6ãUÙ
+IfEndÙ
+If Z=6Ù
+Then 25ãPÙ
+7.5ãVÙ
+5ãUÙ
+IfEndÙ
+If Z=7Ù
+Then 20ãPÙ
+8ãVÙ
+4ãUÙ
+IfEndÙ
+If Z=8Ù
+Then 15ãPÙ
+8.5ãVÙ
+3ãUÙ
+IfEndÙ
+If Z=9Ù
+Then 10ãPÙ
+9ãVÙ
+2ãUÙ
+IfEndÙ
+If Z=10Ù
+Then 5ãPÙ
+5ãVÙ
+1ãUÙ
+IfEndÙ
+If Z=2001Ù
+Then ClrTextÙ
+"@E756@E769@E765 @E761@E764@E776@E765@E772@E773@E761@E769@E772@E765"?ãVÙ
+"@E756@E769@E765 @E76A@E76F@E775@E765@E775@E772"?ãUÙ
+"@E74E@E76F@E76D@E762@E772@E765 @E762@E761@E76C@E76C@E765(@E773)"?ãPÙ
+IfEndÙ
+If Z>10Ù
+Then Goto NÙ
+IfEndÙ
+If Z<0Ù
+Then Goto NÙ
+IfEndÙ
+Lbl AÙ
+ClrTextÙ
+RanInt#(1,20)ãYÙ
+RanInt#(1,20)ãZÙ
+Locate Z,6,"(=)"Ù
+Locate Y,1,"(+)"Ù
+While 1Ù
+RanInt#(1,20)ãYÙ
+0ãRÙ
+Locate 14,7,"  "Ù
+Locate 14,7,PÙ
+Locate 1,7,"@E753@E774@E741@E774@E773"Ù
+Locate 6,7,VÙ
+Locate 10,7,UÙ
+Locate 1,1,"                     "Ù
+Locate Y,1,"(+)"Ù
+Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+If Y=ZÙ
+Then Y+1ãRÙ
+Locate R,2,"."Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,2," "Ù
+Locate R,3,"."Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,3," "Ù
+Locate R,4,"."Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,4," "Ù
+Locate R,5,"."Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,5," "Ù
+Locate R,6,"."Ù
+If Getkey=27Ù
+Then Locate Z,6,"   "Ù
+Locate Z+1,6,"(=)"Ù
+Z+1ãZÙ
+IfEndÙ
+If Getkey=38Ù
+Then Locate Z,6,"   "Ù
+Locate Z-1,6,"(=)"Ù
+Z-1ãZÙ
+IfEndÙ
+Ù
+For 1ãD To 50Ù
+NextÙ
+Locate R,6,"."Ù
+If Z+1=RÙ
+Then If Q=2010Ù
+Then U+1ãUÙ
+IfEndÙ
+U-1ãUÙ
+IfEndÙ
+IfEndÙ
+If Getkey=78Ù
+Then Z+1ãRÙ
+P-1ãPÙ
+Locate R,5,"."Ù
+For 1ãD To 10Ù
+tan 4Ù
+NextÙ
+Locate R,5," "Ù
+Locate R,4,"."Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,4," "Ù
+Locate R,3,"."Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,3," "Ù
+Locate R,2,"."Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,2," "Ù
+Locate R,1,"."Ù
+For 1ãD To 10Ù
+NextÙ
+Locate R,1,"."Ù
+If Y+1=RÙ
+Then V-1ãVÙ
+IfEndÙ
+If Y=RÙ
+Then V-0.5ãVÙ
+IfEndÙ
+If Y+2=RÙ
+Then V-0.5ãVÙ
+IfEndÙ
+IfEndÙ
+Ù
+If VÉ0Ù
+Then BreakÙ
+IfEndÙ
+If UÉ0Ù
+Then BreakÙ
+IfEndÙ
+If PÉ0Ù
+Then BreakÙ
+IfEndÙ
+If Getkey=62Ù
+Then "@E743@E76F@E76D@E76D@E761@E76E@E764:"?ãQÙ
+If Q=2015Ù
+Then U+5ãUÙ
+P+15ãPÙ
+ClrTextÙ
+IfEndÙ
+If Q=2012Ù
+Then 0ãVÙ
+ClrTextÙ
+IfEndÙ
+If Q=2015Ù
+Then "OK"Ù
+IfEndÙ
+ClrTextÙ
+IfEndÙ
+WhileEndÙ
+Lbl BÙ
+If VÉ0Ù
+Then Locate 4,4,"GAGNE"Ù
+IfEndÙ
+If UÉ0Ù
+Then Locate 4,4,"PERDU"Ù
+IfEndÙ
+If PÉ0Ù
+Then Locate 4,4,"PERDU"Ù
+IfEndÙ
+ClrTextÙ
+"@E741@E770@E770@E775@E769@E779@E765@E77A @E741@E743 \@E74F@E74E"
